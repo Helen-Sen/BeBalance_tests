@@ -1,0 +1,21 @@
+{
+  "name": "BeBalance_tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wdio": "wdio run ./wdio.conf.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/local-runner": "^8.38.2",
+    "@wdio/mocha-framework": "^8.38.2",
+    "@wdio/spec-reporter": "^8.38.2"
+  }
+}
