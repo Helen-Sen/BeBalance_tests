@@ -2,9 +2,11 @@ const Page = require("./page");
 
 class SignInPage extends Page {
   path = "sign-in";
+
   open() {
     return super.open(this.path);
   }
+
   get inputEmail() {
     return $('//input[@name="email"]');
   }

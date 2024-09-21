@@ -4,6 +4,7 @@ let baseUrl = "http://bebalance.eu-central-1.elasticbeanstalk.com";
 
 module.exports = class Page {
   path = "";
+
   open(path) {
     this.path = path;
     return browser.url(`${baseUrl}/${path}`);
@@ -17,5 +18,11 @@ module.exports = class Page {
     return $("//*[@href='/tasks']");
   }
 
-  
+  get settingsButton() {
+    return $("//*[@href='/settings']");
+  }
+
+  get myWheelButton() {
+    return $("//*[@href='/']");
+  }
 };
