@@ -25,4 +25,10 @@ module.exports = class Page {
   get myWheelButton() {
     return $("//*[@href='/']");
   }
+
+  get userNameLink() {
+    return $("//span[@class='_username_crmnu_20']")
+  }
+
+  
 };

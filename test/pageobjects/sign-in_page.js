@@ -15,10 +15,10 @@ class SignInPage extends Page {
     return $('//input[@name="password"]');
   }
 
-  async loginAndValidateValues(username, password) {
-    await this.inputEmail.setValue(username);
+  async loginAndValidateValues(email, password) {
+    await this.inputEmail.setValue(email);
     const enteredEmailValue = await this.inputEmail.getValue();
-    await expect(enteredEmailValue).toBe(username);
+    await expect(enteredEmailValue).toBe(email);
 
     await this.inputPassword.setValue(password);
     const enteredPasswordValue = await this.inputPassword.getValue();
