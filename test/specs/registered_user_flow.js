@@ -49,16 +49,19 @@ describe("Registered user flow", () => {
     // Check the "Edit manually" and "Retake quiz" tabs are present and visible
     assert.strictEqual(await wheelPage.editManuallyTab.isDisplayed(), true, "'Edit my wheel results' tab is present but not visible on the page");
     assert.strictEqual(await wheelPage.retakeQuizTab.isDisplayed(), true, "'Retake quiz' tab is present but not visible on the page");
+    await browser.pause(1000);
 
     // Check the all 8 sliders are present and visible
     assert.strictEqual(await wheelPage.slidersTitle.isDisplayed(), true, "Sliders title are present but not visible on the page");
     assert.strictEqual(await wheelPage.sliders.length, 8, "There are not exactly 8 slider elements on the page");
     console.log("Number of sliders:", await wheelPage.sliders.length);
+    await browser.pause(1000);
 
     await wheelPage.saveChangesButton.click();
     await browser.pause(1000);
 
     await wheelPage.editMyWheelResultsButton.click();
+    await browser.pause(1000);
 
     await wheelPage.retakeQuizTab.click();
     await browser.pause(1000);

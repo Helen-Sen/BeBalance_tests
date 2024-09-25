@@ -27,8 +27,8 @@ module.exports = class Page {
   }
 
   get userNameLink() {
-    return $("//span[@class='_username_crmnu_20']")
+    return $("//span[@class='_username_1bdeh_20']");
   }
 
-  
+
 };

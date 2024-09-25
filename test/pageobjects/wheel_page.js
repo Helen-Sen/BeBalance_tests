@@ -40,7 +40,7 @@ class WheelPage extends Page {
   }
 
   get sliders() {
-    return $$('//div[@class="_scores-container_rw7pp_20"]//input[@id="slider"]');
+    return $$('//div[@class="_container_izqwj_1"]//input[@id="slider"]');
   }
 
   get categoriesTitle() {

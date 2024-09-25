@@ -12,7 +12,7 @@ class SettingsPage extends Page {
   }
 
   get dayToReceiveTasksTitle() {
-    return $('//p[text()="Day to receive tasks"]');
+    return $('//p[text()="Days to receive tasks"]');
   }
 
   get notificationFrequencyTitle() {
