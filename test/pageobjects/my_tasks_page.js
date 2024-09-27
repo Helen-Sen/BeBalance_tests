@@ -2,7 +2,7 @@ const Page = require("./page");
 
 class MyTasksPage extends Page {
   path = "tasks";
-  
+
   open() {
     return super.open(this.path);
   }
@@ -18,6 +18,16 @@ class MyTasksPage extends Page {
     return $('//button[@type="button" and span[text()="Past"]]');
   }
 
+  get taskCategories() {
+    return $$('//div[contains(@class, "_content-container_")]');
+  }
+
+   get deadlineTasks() {
+    return $$('//div[contains(@class, "_countdown_")]');
+  }
 }
+
+
+
 
 module.exports = new MyTasksPage();

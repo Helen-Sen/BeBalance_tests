@@ -8,7 +8,7 @@ class SettingsPage extends Page {
   }
 
   get settingsTitle() {
-    return $('//h1[text()="Settings"]');
+    return $('//h4[text()="Settings"]');
   }
 
   get dayToReceiveTasksTitle() {

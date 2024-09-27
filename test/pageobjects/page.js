@@ -26,9 +26,19 @@ module.exports = class Page {
     return $("//*[@href='/']");
   }
 
+  get AIAssistantButton() {
+    return $("//*[@href='/chat']");
+  }
+
   get userNameLink() {
     return $("//span[@class='_username_1bdeh_20']");
   }
 
+  get balanceWheel() {
+    return $("//div[contains(@class, 'root-wheel-container')]//canvas");
+  }
 
+  get taskElements() {
+    return $$('//div[contains(@class, "_card-active")]');
+  }
 };

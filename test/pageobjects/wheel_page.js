@@ -15,10 +15,6 @@ class WheelPage extends Page {
     return $('//button[@type="button" and span[text()="edit my wheel results"]]');
   }
 
-  get balanceWheel() {
-    return $('//div[@class="_root-wheel-container_1qdfz_6"]/canvas');
-  }
-
   get editMyWheelResultsTitle() {
     return $('//h4[text()="Edit my wheel results"]');
   }
@@ -40,7 +36,7 @@ class WheelPage extends Page {
   }
 
   get sliders() {
-    return $$('//div[@class="_container_izqwj_1"]//input[@id="slider"]');
+    return $$('//div[@class="_container_zu8ph_1"]//input[@id="slider"]');
   }
 
   get categoriesTitle() {
